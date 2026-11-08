@@ -241,11 +241,13 @@ DSH 会把已安装的旧版本标成 `Update available`（当前版本还不支
 | 插件加载失败、页面报 boot error | `client.js` 运行时错误 | 打开 DevTools Console 看堆栈；`dsh` 启动日志也会打印插件激活失败 |
 | 索引被拒 | JSON 不合规 | 报错会带 JSON 路径；对照第 5 节字段检查 |
 | 用户装了但按钮不出现 | DSH 版本 < 0.2.2 | 本插件依赖 `ctx.shortcuts`，旧版没有该服务 |
+| 安装成功但 Loader 仍加载旧包名 / 插件不生效 | 只改了 `package.json` 的 `name`，`cordis.patch.yml` 里的 `name` 没跟着改 | patch 行里写的是 Loader **实际加载的模块名**，改包名时必须两边一起改 |
 
 ---
 
 ## 8. 发布检查清单
 
+- [ ] `cordis.patch.yml` 的 `name` 与 `package.json` 的 `name` 完全一致（改包名时最易漏）
 - [ ] `private` 已删除
 - [ ] `name` 是公开可用名
 - [ ] `license` + `LICENSE` 文件

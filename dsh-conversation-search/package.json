@@ -1,6 +1,6 @@
 {
   "name": "@ksd11oj/dsh-conversation-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adds Cmd/Ctrl+F-style full-text search over the current conversation in the DeepSeek Harness Web UI.",
   "type": "module",
   "license": "MIT",
