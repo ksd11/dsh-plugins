@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation search",
+    "description": "Adds Cmd/Ctrl+F-style full-text search to the current conversation: matches prompts, answers, tool calls and reasoning, jumps to and highlights the row, and can load the full history."
+  }
+}

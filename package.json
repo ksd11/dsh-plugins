@@ -1,0 +1,5 @@
+{
+  "name": "dsh-plugins",
+  "private": true,
+  "workspaces": ["packages/*"]
+}

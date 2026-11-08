@@ -1,0 +1,3 @@
+- insert:
+    - id: sidebar-panel
+      name: '@local/sidebar-panel'

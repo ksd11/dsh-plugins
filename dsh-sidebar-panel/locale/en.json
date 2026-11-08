@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar workbench",
+    "description": "Adds a Workbench entry to the left sidebar that opens its own main panel page."
+  }
+}
