@@ -1,6 +1,6 @@
 {
   "name": "@ksd11oj/dsh-conversation-search",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adds Cmd/Ctrl+F-style full-text search over the current conversation in the DeepSeek Harness Web UI.",
   "type": "module",
   "license": "MIT",
@@ -51,5 +51,9 @@
         "@deepseek-ai/dsh-client-ui-conversation"
       ]
     }
+  },
+  "scripts": {
+    "check:manifest": "node scripts/check-manifest.mjs",
+    "prepublishOnly": "node scripts/check-manifest.mjs"
   }
 }

@@ -13,7 +13,7 @@
  * the shipped "load earlier" button until the window is complete.
  */
 window.__ModuleLoader__.load({
-  id: '@local/conversation-search',
+  id: '@ksd11oj/dsh-conversation-search',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
@@ -555,8 +555,8 @@ window.__ModuleLoader__.load({
         ctx.effect(() => ctx.locale.register(NS, { en, zh }), 'conversation-search: dictionaries');
         ctx.effect(() => {
           const tag = document.createElement('style');
-          tag.dataset.plugin = '@local/conversation-search';
-          tag.dataset.pluginCss = '@local/conversation-search/panel.css';
+          tag.dataset.plugin = '@ksd11oj/dsh-conversation-search';
+          tag.dataset.pluginCss = '@ksd11oj/dsh-conversation-search/panel.css';
           tag.textContent = CSS;
           document.head.appendChild(tag);
           return () => { tag.remove(); };
