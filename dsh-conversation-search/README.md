@@ -70,14 +70,29 @@ instead of failing silently.
 
 ## Install
 
-Install this directory as a bundle into the profile that serves the Web GUI
-(`plugin_manager` → `install_bundle`, target = this directory). The bundle is
-selected automatically; **reload the Web page** so the new client bundle is
-served. You should then see a "Find in chat" button in the session header.
+From npm into the profile that serves the Web GUI:
 
-To uninstall, use `plugin_manager` → `remove_bundle` with
-`@local/conversation-search`, then reload. This only removes the bundle's rows;
-no data is written by the plugin.
+```sh
+dsh plugin --profile web add @ksd11oj/dsh-conversation-search
+```
+
+Replace `web` with your profile name (`desktop` on this machine). **Reload the
+Web page** after installing so the new client bundle is served; a "Find in
+chat" button then appears in the session header.
+
+You can also install the checkout directly:
+
+```sh
+dsh plugin --profile web add /absolute/path/to/dsh-conversation-search
+```
+
+To uninstall:
+
+```sh
+dsh plugin --profile web remove @ksd11oj/dsh-conversation-search
+```
+
+Uninstalling only removes the bundle's rows; the plugin writes no data.
 
 ## Layout
 

@@ -1,9 +1,27 @@
 {
-  "name": "@local/conversation-search",
+  "name": "@ksd11oj/dsh-conversation-search",
   "version": "0.1.0",
-  "private": true,
-  "type": "module",
   "description": "Adds Cmd/Ctrl+F-style full-text search over the current conversation in the DeepSeek Harness Web UI.",
+  "type": "module",
+  "license": "MIT",
+  "author": "ksd11oj",
+  "homepage": "https://github.com/ksd11/dsh-plugins/tree/master/dsh-conversation-search#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ksd11/dsh-plugins.git",
+    "directory": "dsh-conversation-search"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "search",
+    "conversation",
+    "find"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -16,7 +34,8 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {
